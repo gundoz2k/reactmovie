@@ -1,0 +1,22 @@
+@use "../../scss/breakpoint" as *;
+
+.movie-list {
+    .swiper-wrapper {
+        width: 300%;
+        .movie-list-swiperSlide {
+            flex-shrink: unset;
+
+            img {
+                height: 350px;
+            }
+
+            @include tablet {
+                width: 30%;
+            }
+
+            @include mobile {
+                width: 40%;
+            }
+        }
+    }
+}
